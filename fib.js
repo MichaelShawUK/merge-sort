@@ -13,7 +13,7 @@ function fibonacciRecursive(n) {
   if (n === 1) return [0];
   if (n === 2) return [0, 1];
   else {
-    result = fibsRec(n - 1);
+    result = fibonacciRecursive(n - 1);
     result.push(result[n - 3] + result[n - 2]);
     return result;
   }
